@@ -39,6 +39,7 @@ class Summary:
         clean_sentences = self.cleanSentences(sentences)
 
         # Extract word vectors and create a dictionary with key value pairs 'word', [word vector]
+        # https://nlp.stanford.edu/projects/glove/ for the precalculated word vectors
         self.word_embeddings = {}
         f = open('glove.6B.100d.txt', encoding='utf-8')
         for line in f:
